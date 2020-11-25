@@ -1,0 +1,380 @@
+/*
+* 1. Custom fonts
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+@font-face {
+  font-family: "Athelas";
+  src: url("./fonts/athelas-cufonfonts/Athelas-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Athelas";
+  src: url("./fonts/athelas-cufonfonts/Athelas-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Baloo Bhai";
+  src: url("./fonts/Baloo_Bhai/BalooBhai-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("./fonts/myriad-pro-cufonfonts/MYRIADPRO-REGULAR.OTF");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*
+* 2. common styles
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 18px;
+  line-height: 34px;
+  color: #6d6d6d;
+  margin: 0;
+}
+
+a:active,
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
+}
+
+.page-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 300px;
+  overflow: hidden;
+}
+@media (min-width: 1200px) {
+  .banner {
+    /* height: 100vh;
+    height: calc(100vh + 100px); */
+    background-image: url("./images/design1.png"), url("./images/design2.png");
+    background-repeat: no-repeat no-repeat;
+    background-position: 9% 256px, 130% 177%;
+    background-repeat: no-repeat;
+    background-size: 38%;
+  }
+}
+
+/* Navigation styles */
+.site-header {
+  background-image: url("./images/header-wave.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: 100% 100%;
+}
+.nav-wrapper {
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 230px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-navigation .navigation-box {
+  display: flex;
+  list-style: none;
+}
+.navbar-logo-box {
+  display: flex;
+  align-items: center;
+}
+.logo-text {
+  font-size: 64px;
+  font-family: "Athelas", sans-serif;
+  color: #b89051;
+  line-height: 0.8;
+}
+.logo-text .subtitle {
+  font-size: 36px;
+  line-height: 1;
+}
+.main-navigation {
+  align-self: flex-start;
+}
+.main-navigation li a {
+  font-family: "Baloo Bhai 2", cursive;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  color: #b89051;
+  padding: 20px 30px;
+}
+
+/* Hero section*/
+.hero-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 80px;
+}
+
+.hero-wrapper > * {
+  flex-wrap: 1;
+  width: 50%;
+}
+/* @media (min-width: 1300px) {
+  .hero-wrapper > * {
+    flex-wrap: 1;
+    width: 50%;
+  } */
+  /* .hero-wrapper > * {
+    flex-wrap: 1;
+    width: 50%;
+} */
+
+  .section2-wrapper > * {
+    flex-wrap: 1;
+    width: 50%;
+  }
+}
+.hero-wrapper .hero-img {
+  padding: 76px;
+}
+.hero-wrapper .hero-img img {
+  max-width: 100%;
+}
+/* .hero-img {
+  background-image: url("./images/design1.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+} */
+.hero-wrapper .hero-text .title {
+  font-size: 70px;
+  font-family: "Baloo Bhai", cursive;
+  color: #070851;
+  line-height: 1;
+  margin: 0;
+  padding: 20px;
+}
+.hero-wrapper .hero-btn-wrapper .btn {
+  display: inline-block;
+  background-color: #070851;
+  font-size: 18px;
+  border-radius: 15px;
+}
+.hero-wrapper .hero-btn-wrapper a {
+  text-decoration: none;
+  color: white;
+  font-size: inherit;
+  padding: 20px 40px;
+}
+.hero-wrapper .hero-text p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  color: #070851;
+  font-weight: bold;
+}
+
+/* Section 1*/
+.section1-wrapper {
+  background-image: url("./images/pattern-blue.jpg");
+  text-align: center;
+  color: white;
+  padding-left: 86px;
+  padding-right: 86px;
+  padding-bottom: 86px;
+}
+.section1-wrapper .text {
+  background-image: url("./images/pattern-light.png");
+  background-repeat: no-repeat;
+  background-position: 50% 78%;
+  background-size: 46%;
+}
+.section1-wrapper .text > h2 {
+  font-family: "Baloo Bhai", cursive;
+  font-size: 64px;
+  margin: 0;
+  line-height: 1;
+  padding-top: 64px;
+  padding-bottom: 40px;
+  /* background-image: url("./images/pattern-light.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 40%; */
+}
+
+.section1-wrapper .text > p {
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.section1-wrapper .card-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+.section1-wrapper .card-box .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+.section1-wrapper .card-box .card img {
+  border-radius: 50%;
+  max-width: 100%;
+}
+.section1-wrapper .card-box .card .title {
+  font-family: "Baloo Bhai", cursive;
+  font-size: 28px;
+}
+.section1-wrapper .card-box .card .subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+.card-box .img-wrapper {
+  background-image: url("./images/card-bg.png");
+  background-repeat: no-repeat;
+  padding: 20px;
+  padding-left: 22px;
+  background-size: contain;
+}
+
+/* section 2*/
+.section2-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+.section2-wrapper .section-content {
+  padding: 40px;
+  text-align: left;
+}
+.section2-wrapper .section-content h2 {
+  font-family: "Baloo Bhai", cursive;
+  font-size: 48px;
+  color: #06087f;
+  line-height: 1;
+}
+.section2-wrapper .section-content p {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1;
+  color: #06087f;
+}
+
+.section-content .btn {
+  display: inline-block;
+  background-color: #06087f;
+  font-family: "Baloo Bhai", cursive;
+  font-size: 18px;
+  color: #b89051;
+  padding: 6px 42px;
+}
+.section-content .btn a {
+  text-decoration: none;
+  color: #b89051;
+}
+.section-images {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.section-images .content-1 img,
+.section-images .content-2 img {
+  display: block;
+  height: 300px;
+  width: 100%;
+}
+.section-images .content-1,
+.section-images .content-2 {
+  position: relative;
+}
+.section-images .text-box,
+.section-images .text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  color: #06087f;
+}
+
+.section-images .text-box .title {
+  font-family: "Baloo Bhai", cursive;
+  font-size: 42px;
+}
+.section-images .text-box .subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+}
+#section-3 .card-box .img-wrapper {
+  background: none;
+}
+#section-3 .section1-wrapper .card-box .card img {
+  border-radius: 0;
+}
+#section-3 .section1-wrapper .card-box .card {
+  background-color: white;
+  border-radius: 10px;
+}
+#section-3 .section1-wrapper .card-box .card {
+  color: #06087f;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: #b89051;
+  background-color: #06087f;
+  text-align: center;
+  cursor: pointer;
+  width: 70%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card button:hover {
+  opacity: 0.9;
+}
+
+/*Section 4*/
+#section-4 .section1-wrapper {
+  background-image: url("./images/section-4-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#section-4 .section1-wrapper .text {
+  background-image: none;
+}
+#section-4 .section1-wrapper {
+  color: #06087f;
+}
+#section-4 .card-box .img-wrapper {
+  background-image: none;
+}
+#section-4 .section1-wrapper .card-box .card {
+  box-shadow: none;
+}
+#section-4 .section1-wrapper {
+  padding-bottom: 30px;
+}
