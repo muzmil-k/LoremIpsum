@@ -112,6 +112,9 @@ a:visited {
 .main-navigation {
   align-self: flex-start;
 }
+.main-navigation li {
+  margin: 10px;
+}
 .main-navigation li a {
   font-family: "Baloo Bhai 2", cursive;
   font-weight: bold;
@@ -119,6 +122,7 @@ a:visited {
   font-size: 20px;
   color: #b89051;
   padding: 20px 30px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.6);
 }
 
 /* Hero section*/
@@ -146,6 +150,22 @@ a:visited {
 .hero-wrapper .hero-img {
   padding: 76px;
 }
+@media (max-width: 968px) {
+  .hero-wrapper .hero-img {
+    padding: 32px;
+  }
+}
+@media (max-width: 758px) {
+  .hero-wrapper {
+    display: block;
+  }
+  .hero-wrapper > * {
+    margin: 0 auto;
+  }
+  .hero-wrapper .hero-img {
+    padding: 0px;
+  }
+}
 .hero-wrapper .hero-img img {
   max-width: 100%;
 }
@@ -163,6 +183,7 @@ a:visited {
   background-color: #070851;
   font-size: 18px;
   border-radius: 15px;
+  margin: 10px;
 }
 .hero-wrapper .hero-btn-wrapper a {
   text-decoration: none;
