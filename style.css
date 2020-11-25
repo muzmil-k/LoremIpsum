@@ -141,22 +141,22 @@ a:visited {
     flex-wrap: 1;
     width: 50%;
   } */
-  /* .hero-wrapper > * {
+/* .hero-wrapper > * {
     flex-wrap: 1;
     width: 50%;
 } */
 
-  .section2-wrapper > * {
-    flex-wrap: 1;
-    width: 50%;
-  }
+.section2-wrapper > * {
+  flex-wrap: 1;
+  width: 50%;
 }
+
 .hero-wrapper .hero-img {
   padding: 76px;
 }
 .hero-wrapper .hero-img img {
   max-width: 100%;
-  padding:70px;
+  padding: 70px;
 }
 /* .hero-img {
   background-image: url("./images/design1.png");
