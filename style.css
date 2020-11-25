@@ -156,13 +156,8 @@ a:visited {
 }
 .hero-wrapper .hero-img img {
   max-width: 100%;
-  /* padding: 70px; */
 }
-/* .hero-img {
-  background-image: url("./images/design1.png");
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
-} */
+
 .hero-wrapper .hero-text .title {
   font-size: 70px;
   font-family: "Baloo Bhai", cursive;
