@@ -6,45 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
+
 </head>
 
 <body>
     <div class="page-wrapper">
         <div class="banner">
-            <div class="site-header">
-                <!-- Header -->
-                <header>
-                    <div class="nav-wrapper">
-                        <nav class="navbar">
-                            <div class="navbar-logo-box">
-                                <a href="#">
-                                    <img src="./images/logo.jpg" alt="Logo" class="navbar-logo-img">
-                                </a>
-                                <span class="logo-text">
-                                    <div class="title">LOREM</div>
-                                    <div class="subtitle">LoremIpsum LoremIpsum</div>
-                                </span>
-                            </div>
-                            <div class="main-navigation">
-                                <ul class="navigation-box">
-                                    <li>
-                                        <a href="">LOREM</a>
-                                    </li>
-                                    <li>
-                                        <a href="">LOREM1</a>
-                                    </li>
-                                    <li>
-                                        <a href="">LOREM2</a>
-                                    </li>
-                                </ul>
+            <header class="site-header">
+                <nav>
+                    <ul class="menu">
+                        <li class="logo">
+                            <img src="./images/logo.jpg" alt="logo" width="100px">
+                            <span>
+                                <a class="logo-text" href="#">Lorem</a>
+                                <a href="" class="subtitle">LoremIpsumLoremIpsum</a>
+                            </span>
+                        </li>
+                        <li class="item"><a href="#">Lorem</a></li>
+                        <li class="item"><a href="#">Lorem2</a></li>
 
-                            </div>
-                        </nav>
-                    </div>
-                </header>
-                <!-- Header end-->
-            </div>
+                        <li class="item"><a href="#">Lorem3</a></li>
+                        <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </header>
             <!-- Hero seciton-->
             <div class="hero-wrapper">
 
@@ -58,9 +45,9 @@
                         <div class="btn"><a href="">LOREM</a></div>
                         <div class="btn"><a href="">LOREM IPSUM</a></div>
                     </div>
-                    <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit</p>
-                    <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit</p>
-                    <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                 </div>
             </div>
             <!-- Hero section end-->
@@ -273,8 +260,53 @@
 
 
     </div>
+    <script>
+        const toggle = document.querySelector(".toggle");
+        const menu = document.querySelector(".menu");
+        const items = document.querySelectorAll(".item");
 
+        /* Toggle mobile menu */
+        function toggleMenu() {
+            if (menu.classList.contains("active")) {
+                menu.classList.remove("active");
+                toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
+            } else {
+                menu.classList.add("active");
+                toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
+            }
+        }
 
+        /* Activate Submenu */
+        function toggleItem() {
+            if (this.classList.contains("submenu-active")) {
+                this.classList.remove("submenu-active");
+            } else if (menu.querySelector(".submenu-active")) {
+                menu.querySelector(".submenu-active").classList.remove("submenu-active");
+                this.classList.add("submenu-active");
+            } else {
+                this.classList.add("submenu-active");
+            }
+        }
+
+        /* Close Submenu From Anywhere */
+        function closeSubmenu(e) {
+            let isClickInside = menu.contains(e.target);
+
+            if (!isClickInside && menu.querySelector(".submenu-active")) {
+                menu.querySelector(".submenu-active").classList.remove("submenu-active");
+            }
+        }
+        /* Event Listeners */
+        toggle.addEventListener("click", toggleMenu, false);
+        for (let item of items) {
+            if (item.querySelector(".submenu")) {
+                item.addEventListener("click", toggleItem, false);
+            }
+            item.addEventListener("keypress", toggleItem, false);
+        }
+        document.addEventListener("click", closeSubmenu, false);
+    </script>
+    <script src="https://kit.fontawesome.com/63f6cfe932.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
