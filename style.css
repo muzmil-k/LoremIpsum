@@ -80,12 +80,14 @@ a {
 }
 
 /* Navigation styles */
-.site-header {
-  background-image: url("./images/header-wave.png");
-  background-repeat: no-repeat;
-  width: 100%;
-  background-size: 100% 100%;
-  padding-bottom: 50px;
+@media (min-width: 768px) {
+  .site-header {
+    background-image: url("./images/header-wave.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 100% 100%;
+    padding-bottom: 50px;
+  }
 }
 /*Navigation menu styling*/
 
