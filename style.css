@@ -85,7 +85,7 @@ a {
   background-repeat: no-repeat;
   width: 100%;
   background-size: 100% 100%;
-  min-height: 250px;
+  padding-bottom: 50px;
 }
 /*Navigation menu styling*/
 
@@ -126,7 +126,7 @@ a {
 .menu li a {
   display: block;
   padding: 15px 5px;
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Baloo Bhai 2", cursive;
   font-weight: bold;
   color: #b89051;
@@ -135,7 +135,7 @@ a {
 .menu .toggle {
   order: 1;
   font-size: 30px !important;
-  padding: 40px;
+  padding: 15px;
   padding-left: 0;
 }
 .fa,
@@ -210,11 +210,13 @@ a {
   font-family: "Athelas", sans-serif;
   color: #b89051;
   padding-left: 0;
+  padding-top: 0;
 }
 
 @media (max-width: 700px) {
   .logo .logo-text {
     font-size: 48px;
+    padding-bottom: 0;
   }
   .logo .subtitle {
     font-size: 22px;
@@ -584,5 +586,14 @@ a {
     background-color: #fff;
     transition: transform ease 0.15s;
     border-radius: 10px;
+  }
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+  .site-header {
+    background-image: none;
+    background-color: #06083d;
+    height: auto;
   }
 }
