@@ -412,6 +412,7 @@ a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  flex-grow: 1;
 }
 .section-images .content-1 img,
 .section-images .content-2 img {
