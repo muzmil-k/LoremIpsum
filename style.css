@@ -228,11 +228,7 @@ a {
     width: 70px;
   }
 }
-@media (max-width: 435px) {
-  .logo .subtitle {
-    display: none;
-  }
-}
+
 .hero-wrapper {
   display: flex;
   flex-wrap: wrap;
