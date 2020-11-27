@@ -522,20 +522,22 @@ a {
   justify-content: space-between;
   color: #06087f;
   padding: 50px;
-  padding-top: 184px;
 }
 .footer-wraper .column {
   text-align: center;
   padding: 10px;
   margin: auto;
+  margin-top: 100px;
 }
 .footer .footer-wraper h2 {
   font-family: "Baloo Bhai", cursive;
   margin: 0;
+  font-size: 22px;
 }
 .footer .footer-wraper p {
   font-family: "Montserrat", sans-serif;
   margin: 0;
+  font-size: 16px;
 }
 .copyright {
   text-align: center;
@@ -664,7 +666,11 @@ a {
     padding-bottom: 0;
   }
   .footer .footer-wraper {
-    padding-top: 120px;
+    padding: 0;
+    padding-top: 58px;
+  }
+  .footer-wraper .column{
+    margin-top: 35px;
   }
 }
 @media (max-width: 576px) {
@@ -673,6 +679,10 @@ a {
   }
   .menu {
     padding-right: 0;
+  }
+  .footer-wraper .column {
+    margin-top: 0;
+    padding-bottom: 0;
   }
 }
 
