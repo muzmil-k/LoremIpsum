@@ -662,4 +662,7 @@ a {
   .section2-wrapper .section-content {
     padding: 20px;
   }
+  .menu {
+    padding-right: 0;
+  }
 }
