@@ -183,6 +183,7 @@ a {
     flex-wrap: nowrap;
     background: none;
     padding-right: 50px;
+    padding-top: 35px;
   }
   .logo {
     order: 0;
@@ -204,6 +205,7 @@ a {
   font-family: "Athelas", sans-serif;
   color: #b89051;
   line-height: 1;
+  padding: 0;
 }
 .logo .subtitle {
   font-size: 36px;
@@ -290,7 +292,7 @@ a {
   text-decoration: none;
   color: white;
   font-size: inherit;
-  padding: 20px 40px;
+  padding: 0px 40px;
 }
 .hero-wrapper .hero-text p {
   font-family: "Montserrat", sans-serif;
