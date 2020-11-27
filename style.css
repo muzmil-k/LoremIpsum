@@ -98,7 +98,6 @@ a {
 }
 .logo {
   font-size: 20px;
-  padding: 30px 10px 7.5px 30px;
   display: flex;
   align-items: center;
 }
@@ -124,6 +123,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
 }
 .menu li a {
   display: block;
@@ -143,7 +143,7 @@ a {
 .fa,
 .fas {
   font-weight: 900;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .item {
@@ -217,7 +217,7 @@ a {
 
 @media (max-width: 700px) {
   .logo .logo-text {
-    font-size: 48px;
+    font-size: 32px;
     padding-bottom: 0;
     padding-top: 0;
   }
