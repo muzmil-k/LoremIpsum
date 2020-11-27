@@ -287,6 +287,7 @@ a {
   font-size: 18px;
   border-radius: 15px;
   margin: 10px;
+  width: 220px;
 }
 .hero-wrapper .hero-btn-wrapper a {
   text-decoration: none;
