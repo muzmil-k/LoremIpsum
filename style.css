@@ -273,11 +273,6 @@ a {
   max-width: 100%;
 }
 
-@media (max-width: 344px){
-.menu {
-    padding-right: 0;
-    padding-left: 7px;
-}
 
 .hero-wrapper .hero-text .title {
   font-size: 70px;
@@ -673,4 +668,10 @@ a {
   .menu {
     padding-right: 0;
   }
+}
+
+@media (max-width: 344px){
+.menu {
+    padding-right: 0;
+    padding-left: 7px;
 }
