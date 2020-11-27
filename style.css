@@ -213,6 +213,7 @@ a {
   color: #b89051;
   padding-left: 0;
   padding-top: 0;
+  padding-bottom: 0;
 }
 
 @media (max-width: 700px) {
@@ -220,6 +221,7 @@ a {
     font-size: 32px;
     padding-bottom: 0;
     padding-top: 0;
+    padding-left: 0;
   }
   .logo .subtitle {
     font-size: 22px;
