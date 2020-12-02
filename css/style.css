@@ -5,32 +5,32 @@
 
 @font-face {
   font-family: "Athelas";
-  src: url("./fonts/athelas-cufonfonts/Athelas-Regular.ttf");
+  src: url("../fonts/athelas-cufonfonts/Athelas-Regular.ttf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Athelas";
-  src: url("./fonts/athelas-cufonfonts/Athelas-Bold.ttf");
+  src: url("../fonts/athelas-cufonfonts/Athelas-Bold.ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Baloo Bhai";
-  src: url("./fonts/Baloo_Bhai/BalooBhai-Regular.ttf");
+  src: url("../fonts/Baloo_Bhai/BalooBhai-Regular.ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Baloo Bhai";
-  src: url("./fonts/Baloo_Bhai/");
+  src: url("../fonts/Baloo_Bhai/");
   font-style: normal;
 }
 
 @font-face {
   font-family: "Myriad Pro";
-  src: url("./fonts/myriad-pro-cufonfonts/MYRIADPRO-REGULAR.OTF");
+  src: url("../fonts/myriad-pro-cufonfonts/MYRIADPRO-REGULAR.OTF");
   font-weight: 400;
   font-style: normal;
 }
@@ -60,6 +60,11 @@ a {
   text-decoration: none;
 }
 
+/*Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 .page-wrapper {
   position: relative;
   margin: 0 auto;
@@ -71,7 +76,7 @@ a {
   .banner {
     /* height: 100vh;
     height: calc(100vh + 100px); */
-    background-image: url("./images/design1.png"), url("./images/design2.png");
+    background-image: url("../images/design1.png"), url("../images/design2.png");
     background-repeat: no-repeat no-repeat;
     background-position: 9% 300px, 130% 177%;
     background-repeat: no-repeat;
@@ -82,7 +87,7 @@ a {
 /* Navigation styles */
 @media (min-width: 968px) {
   .site-header {
-    background-image: url("./images/header-wave.png");
+    background-image: url("../images/header-wave.png");
     background-repeat: no-repeat;
     width: 100%;
     background-size: 100% 100%;
@@ -304,7 +309,7 @@ a {
 
 /* Section 1*/
 .section1-wrapper {
-  background-image: url("./images/pattern-blue.jpg");
+  background-image: url("../images/pattern-blue.jpg");
   text-align: center;
   color: white;
   padding-left: 30px;
@@ -364,7 +369,7 @@ a {
 }
 
 .card-box .img-wrapper {
-  background-image: url("./images/card-bg.png");
+  background-image: url("../images/card-bg.png");
   background-repeat: no-repeat;
   padding: 20px;
   padding-left: 22px;
@@ -476,7 +481,7 @@ a {
 
 /*Section 4*/
 #section-4 .section1-wrapper {
-  background-image: url("./images/section-4-bg.jpg");
+  background-image: url("../images/section-4-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -509,7 +514,7 @@ a {
 
 /* Footer wrapper */
 .footer {
-  background-image: url("./images/footer-wave.jpg");
+  background-image: url("../images/footer-wave.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
