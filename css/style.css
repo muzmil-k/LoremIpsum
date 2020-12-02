@@ -30,7 +30,19 @@
 
 @font-face {
   font-family: "Myriad Pro";
-  src: url("../fonts/myriad-pro-cufonfonts/MYRIADPRO-REGULAR.OTF");
+  src: url("../fonts/myriad-pro-cufonfonts/MYRIADPRO-REGULAR.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../fonts/myriad-pro-cufonfonts/MYRIADPRO-BOLD.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Apple Chancery";
+  src: url("../fonts/Apple-Chancery/Apple-Chancery.ttf");
   font-weight: 400;
   font-style: normal;
 }
@@ -38,6 +50,10 @@
 /*
 * 2. common styles
 */
+:root {
+  --blue: #06087f;
+}
+
 *,
 *::before,
 *::after {
@@ -58,11 +74,6 @@ a:visited {
 a {
   color: white;
   text-decoration: none;
-}
-
-/*Smooth scrolling */
-html {
-  scroll-behavior: smooth;
 }
 
 .page-wrapper {
@@ -134,7 +145,7 @@ html {
   display: block;
   padding: 15px 5px;
   font-size: 25px;
-  font-family: "Baloo Bhai 2", cursive;
+  font-family: "Apple Chancery", cursive;
   font-weight: bold;
   color: #b89051;
 }
@@ -158,7 +169,7 @@ html {
   display: none;
 }
 .active {
-  background-color: #06083d;
+  background-color: var(--blue);
 }
 .active .item {
   display: block;
@@ -280,14 +291,14 @@ html {
 .hero-wrapper .hero-text .title {
   font-size: 70px;
   font-family: "Baloo Bhai", cursive;
-  color: #070851;
+  color: var(--blue);
   line-height: 1;
   margin: 0;
   padding: 20px;
 }
 .hero-wrapper .hero-btn-wrapper .btn {
   display: inline-block;
-  background-color: #070851;
+  background-color: var(--blue);
   font-size: 18px;
   border-radius: 15px;
   margin: 10px;
@@ -302,7 +313,7 @@ html {
 .hero-wrapper .hero-text p {
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
-  color: #070851;
+  color: var(--blue);
   font-weight: bold;
   padding: 0 35px;
 }
@@ -390,19 +401,19 @@ html {
 .section2-wrapper .section-content h2 {
   font-family: "Baloo Bhai", cursive;
   font-size: 48px;
-  color: #06087f;
+  color: var(--blue);
   line-height: 1;
 }
 .section2-wrapper .section-content p {
   font-size: 24px;
   font-family: "Montserrat", sans-serif;
   line-height: 1;
-  color: #06087f;
+  color: var(--blue);
 }
 
 .section-content .btn {
   display: inline-block;
-  background-color: #06087f;
+  background-color: var(--blue);
   font-family: "Baloo Bhai", cursive;
   font-size: 18px;
   color: #b89051;
@@ -436,7 +447,7 @@ html {
   transform: translate(-50%, -50%);
   z-index: 2;
   width: 100%;
-  color: #06087f;
+  color: var(--blue);
 }
 
 .section-images .text-box .title {
@@ -458,7 +469,7 @@ html {
   border-radius: 10px;
 }
 #section-3 .section1-wrapper .card-box .card {
-  color: #06087f;
+  color: var(--blue);
   margin-bottom: 20px;
 }
 
@@ -467,7 +478,7 @@ html {
   outline: 0;
   padding: 12px;
   color: #b89051;
-  background-color: #06087f;
+  background-color: var(--blue);
   text-align: center;
   cursor: pointer;
   width: 70%;
@@ -489,7 +500,7 @@ html {
   background-image: none;
 }
 #section-4 .section1-wrapper {
-  color: #06087f;
+  color: var(--blue);
 }
 #section-4 .card-box .img-wrapper {
   background-image: none;
@@ -546,7 +557,7 @@ html {
   text-align: center;
   font-family: "Baloo Bhai", cursive;
   font-weight: bold;
-  color: #06087f;
+  color: var(--blue);
 }
 /* Responsive styles */
 /* Responsive navigation */
@@ -606,12 +617,17 @@ html {
     border-radius: 10px;
   }
 }
-
+.footer .footer-wraper a {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  font-size: 16px;
+  color: var(--blue);
+}
 /* Responsive design */
 @media only screen and (max-width: 768px) {
   .site-header {
     background-image: none;
-    background-color: #06083d;
+    background-color: var(--blue);
     height: auto;
   }
   .logo .logo-text {
@@ -676,6 +692,7 @@ html {
     margin-top: 35px;
   }
 }
+
 @media (max-width: 576px) {
   .section2-wrapper .section-content {
     padding: 20px;
