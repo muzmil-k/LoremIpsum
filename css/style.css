@@ -75,6 +75,9 @@ a {
   color: white;
   text-decoration: none;
 }
+.para-2 {
+  display: none;
+}
 
 .page-wrapper {
   position: relative;
@@ -254,8 +257,8 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 45px;
-  padding-bottom: 80px;
+  padding-top: 85px;
+  padding-bottom: 200px;
 }
 @media (min-width: 900px) {
   .hero-wrapper > * {
@@ -270,7 +273,8 @@ a {
 }
 
 .hero-wrapper .hero-img {
-  padding: 3vw;
+  padding: 0;
+  overflow: visible;
 }
 
 @media (max-width: 758px) {
@@ -309,6 +313,7 @@ a {
   color: white;
   font-size: inherit;
   padding: 0px 40px;
+  cursor: pointer;
 }
 .hero-wrapper .hero-text p {
   font-family: "Montserrat", sans-serif;
@@ -316,6 +321,9 @@ a {
   color: var(--blue);
   font-weight: bold;
   padding: 0 35px;
+}
+.hero-text {
+  overflow: hidden;
 }
 
 /* Section 1*/
@@ -560,6 +568,10 @@ a {
   font-weight: bold;
   color: var(--blue);
 }
+.language-links a img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
+
 /* Responsive styles */
 /* Responsive navigation */
 .nav-toggle {

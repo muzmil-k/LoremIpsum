@@ -1,0 +1,38 @@
+.section1-wrapper .text > h1 {
+  font-family: "Baloo Bhai", cursive;
+  font-size: 80px;
+  margin: 0;
+  line-height: 1;
+  padding-top: 0;
+}
+.section1-wrapper .text {
+  margin: 4rem;
+}
+
+h3,
+p {
+  text-align: center;
+}
+h3 {
+  font-size: 3rem;
+  font-family: "Baloo Bhai", cursive;
+  line-height: 1;
+}
+
+li {
+  list-style-position: inside;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+@media only screen and (max-width: 768px) {
+  .section1-wrapper .text > h1 {
+    font-size: 3rem;
+  }
+  .section1-wrapper .text > h3 {
+    font-size: 2rem;
+  }
+  .section1-wrapper .text {
+    margin: 1rem;
+  }
+}

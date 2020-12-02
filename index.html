@@ -8,6 +8,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script>
@@ -35,7 +36,57 @@
                 } // End if
             });
         });
+
+
+        $(document).ready(function () {
+            $(".btn-1").click(function () {
+                $(".para-2").hide();
+                $(".para-1").show();
+
+
+            });
+            $(".btn-2").click(function () {
+                $(".para-2").show();
+                $(".para-1").hide();
+
+            });
+        });
     </script>
+    <style>
+        .hero-img {
+            position: relative;
+            overflow: visible;
+        }
+
+        .hero-img img {
+            position: absolute;
+            z-index: -1;
+            left: 0;
+        }
+
+        .video-container {
+            overflow: hidden;
+            position: relative;
+            width: 43%;
+        }
+
+        .video-container::after {
+            padding-top: 56.25%;
+            display: block;
+            content: '';
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 6px;
+            padding-bottom: 0px;
+        }
+    </style>
+
 
 </head>
 
@@ -45,7 +96,7 @@
             <header class="site-header">
                 <nav>
                     <ul class="menu">
-                        <li class="logo">
+                        <li class="logo animate__animated animate__bounceIn">
                             <img src="./images/logo.jpg" alt="logo" width="100px">
                             <span style="padding-left: 10px;">
                                 <a class="logo-text" href="#" style="padding-left: 0;">Lorem</a>
@@ -62,19 +113,33 @@
             <!-- Hero seciton-->
             <div class="hero-wrapper">
 
-                <div class="hero-img">
+                <div class="hero-img video-container">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yzCYLeR3G7k?controls=0"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                     <img src="./images/pc.png" alt="">
+
+
                 </div>
 
                 <div class="hero-text">
-                    <h1 class="title">Lorem Ipsum</h1>
+                    <h1 class="animate__animated animate__fadeIn" class="title">Lorem Ipsum</h1>
                     <div class="hero-btn-wrapper">
-                        <div class="btn"><a href="">LOREM</a></div>
-                        <div class="btn"><a href="">LOREM IPSUM</a></div>
+                        <div class="btn btn-1"><a>LOREM</a></div>
+                        <div class="btn btn-2"><a>LOREM IPSUM</a></div>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <div class="para-1 animate__animated animate__fadeInLeft">
+                        <p>First paragaph showing,a ssasconsectetur adipisicing elit</p>
+                        <p>First paragaph showing,amet, consectetur adipisicing elit</p>
+                        <p>First paragaph showing,met, csonsectetur adipisicing elit</p>
+                    </div>
+                    <div class="para-2  animate__animated animate__fadeInRight">
+                        <p>2nd paragaph showing,a ssasconsectetur adipisicing elit</p>
+                        <p>second paragaph showing,amet, consectetur adipisicing elit</p>
+                        <p>2nd paragaph showing,met, csonsectetur adipisicing elit</p>
+                    </div>
+
                 </div>
             </div>
             <!-- Hero section end-->
