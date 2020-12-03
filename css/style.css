@@ -101,7 +101,7 @@ a {
 /* Navigation styles */
 @media (min-width: 960px) {
   .site-header {
-    background-image: url("../images/header-wave.png");
+    background-image: url("../images/header-wave-1.png");
     background-repeat: no-repeat;
     width: 100%;
     background-size: 100% 100%;
