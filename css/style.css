@@ -386,6 +386,9 @@ a {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
 }
+a {
+  cursor: pointer;
+}
 
 .card-box .img-wrapper {
   background-image: url("../images/card-bg.png");
