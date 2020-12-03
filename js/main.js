@@ -27,13 +27,20 @@
         $(document).ready(function () {
             $(".btn-1").click(function () {
                 $(".para-2").hide();
+                $(".video-2").hide();
                 $(".para-1").show();
+                $(".video-1").show();
+
+                
 
 
             });
             $(".btn-2").click(function () {
                 $(".para-2").show();
+                $(".video-2").show();
                 $(".para-1").hide();
+                $(".video-1").hide();
+
 
             });
         });
