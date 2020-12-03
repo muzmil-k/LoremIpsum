@@ -10,98 +10,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-
-    <script>
-        $(document).ready(function () {
-            // Add smooth scrolling to all links
-            $("a").on('click', function (event) {
-
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function () {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-        });
-
-
-        $(document).ready(function () {
-            $(".btn-1").click(function () {
-                $(".para-2").hide();
-                $(".para-1").show();
-
-
-            });
-            $(".btn-2").click(function () {
-                $(".para-2").show();
-                $(".para-1").hide();
-
-            });
-        });
-    </script>
     <style>
-        .hero-img {
-            position: relative;
-            overflow: visible;
-        }
 
-        .hero-img img {
-            position: absolute;
-            z-index: 0;
-            left: 0;
-            width: 100%;
-        }
-
-        .video-container {
-            overflow: hidden;
-            position: relative;
-            width: 43%;
-        }
-
-        .video-container::after {
-            padding-top: 56.25%;
-            display: block;
-            content: '';
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100.01%;
-            height: 100.1%;
-            padding: 0px;
-            padding-bottom: 0px;
-            z-index: 2;
-            border: 5px solid #5c5e5e;
-            border-bottom: 0px solid #262626;
-            border-bottom-left-radius: 5px;
-            border-left-color: #1c1c1c;
-        }
-
-        @media (max-width: 960px) {
-            .video-container {
-                width: 85%;
-            }
-
-            .hero-wrapper .hero-text {
-                width: 85%;
-                margin-top: 48px;
-            }
-        }
     </style>
 
 
@@ -383,52 +293,7 @@
 
 
     </div>
-    <script>
-        const toggle = document.querySelector(".toggle");
-        const menu = document.querySelector(".menu");
-        const items = document.querySelectorAll(".item");
-
-        /* Toggle mobile menu */
-        function toggleMenu() {
-            if (menu.classList.contains("active")) {
-                menu.classList.remove("active");
-                toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
-            } else {
-                menu.classList.add("active");
-                toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
-            }
-        }
-
-        /* Activate Submenu */
-        function toggleItem() {
-            if (this.classList.contains("submenu-active")) {
-                this.classList.remove("submenu-active");
-            } else if (menu.querySelector(".submenu-active")) {
-                menu.querySelector(".submenu-active").classList.remove("submenu-active");
-                this.classList.add("submenu-active");
-            } else {
-                this.classList.add("submenu-active");
-            }
-        }
-
-        /* Close Submenu From Anywhere */
-        function closeSubmenu(e) {
-            let isClickInside = menu.contains(e.target);
-
-            if (!isClickInside && menu.querySelector(".submenu-active")) {
-                menu.querySelector(".submenu-active").classList.remove("submenu-active");
-            }
-        }
-        /* Event Listeners */
-        toggle.addEventListener("click", toggleMenu, false);
-        for (let item of items) {
-            if (item.querySelector(".submenu")) {
-                item.addEventListener("click", toggleItem, false);
-            }
-            item.addEventListener("keypress", toggleItem, false);
-        }
-        document.addEventListener("click", closeSubmenu, false);
-    </script>
+    <script src="./js/main.js"></script>
     <script src="https://kit.fontawesome.com/63f6cfe932.js" crossorigin="anonymous"></script>
 </body>
 
