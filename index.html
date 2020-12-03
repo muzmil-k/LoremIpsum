@@ -8,12 +8,9 @@
     <title>Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-    <style>
-
-    </style>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="./js/WOW-master/css/libs/animate.min.css">
 
 </head>
 
@@ -23,7 +20,7 @@
             <header class="site-header">
                 <nav>
                     <ul class="menu">
-                        <li class="logo animate__animated animate__bounceIn">
+                        <li class="logo wow animate__bounceIn" data-wow-duration="1s">
                             <img src="./images/logo.jpg" alt="logo" width="100px">
                             <span style="padding-left: 10px;">
                                 <a class="logo-text" href="#" style="padding-left: 0;">Lorem</a>
@@ -51,17 +48,17 @@
                 </div>
 
                 <div class="hero-text">
-                    <h1 class="animate__animated animate__fadeIn title">Lorem Ipsum</h1>
+                    <h1 class="wow animate__fadeIn title" data-wow-duration="2s">Lorem Ipsum</h1>
                     <div class="hero-btn-wrapper">
                         <div class="btn btn-1"><a>LOREM</a></div>
                         <div class="btn btn-2"><a>LOREM IPSUM</a></div>
                     </div>
-                    <div class="para-1 animate__animated animate__fadeInLeft">
+                    <div class="para-1 wow animate__fadeInLeft" data-wow-duration="1s">
                         <p>First paragaph showing,a ssasconsectetur adipisicing elit</p>
                         <p>First paragaph showing,amet, consectetur adipisicing elit</p>
                         <p>First paragaph showing,met, csonsectetur adipisicing elit</p>
                     </div>
-                    <div class="para-2  animate__animated animate__fadeInRight">
+                    <div class="para-2  wow animate__fadeInRight" data-wow-duration="1s">
                         <p>2nd paragaph showing,a ssasconsectetur adipisicing elit</p>
                         <p>second paragaph showing,amet, consectetur adipisicing elit</p>
                         <p>2nd paragaph showing,met, csonsectetur adipisicing elit</p>
@@ -75,18 +72,20 @@
         <section id="section-1">
             <div class="section1-wrapper">
                 <div class="text">
-                    <h2 class="animate__animated animate__fadeIn">Lorem
+                    <h2 class="wow animate__fadeIn" data-wow-duration="2s">Lorem
                         Ipsumm
                     </h2>
                     <img src="./images/pattern-light.png" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi<br>
+                    <p class="wow animate__fadeInDown" data-wow-duration="2s">Lorem ipsum dolor sit amet consectetur
+                        adipisicing
+                        elit. Commodi<br>
                         velit, ea eius aliquid, dolorum unde eligendi soluta omnis, esse<br>
                         fugit assumenda delectus!
                     </p>
                 </div>
 
                 <div class="card-box">
-                    <div class="card card-1">
+                    <div class="card card-1 wow animate__fadeInLeft" data-wow-duration="2s">
                         <div class="img-wrapper">
                             <img src="./images/card1.jpg" alt="Denim Jeans">
                         </div>
@@ -94,7 +93,7 @@
                         <p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
 
                     </div>
-                    <div class="card card-1">
+                    <div class="card card-1 wow animate__fadeInUp" data-wow-duration="2s">
                         <div class="img-wrapper">
                             <img src="./images/card2.jpg" alt="Denim Jeans">
                         </div>
@@ -102,7 +101,7 @@
                         <p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
 
                     </div>
-                    <div class="card card-1">
+                    <div class="card card-1 wow animate__fadeInRight" data-wow-duration="2s">
                         <div class="img-wrapper">
                             <img src="./images/card3.jpg" alt="Denim Jeans">
                         </div>
@@ -122,23 +121,25 @@
         <section id="about-us">
             <div class="section2-wrapper">
                 <div class="section-content">
-                    <h2>Lor Emmm
+                    <h2 class="wow animate__fadeIn" data-wow-duration="2s">Lor Emmm
                         Ip Summ ?</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ?</p>
+                    <p class="wow animate__fadeInDown" data-wow-duration="2s">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do ?
+                    </p>
                     <div class="btn"><a href="">Lorem Ipsum</a></div>
                 </div>
                 <div class="section-images">
                     <div class="content-1">
-                        <img src="./images/yoga.jpg" alt="">
-                        <div class="text-box">
+                        <img class="wow animate__zoomIn" data-wow-duration="2s" src="./images/yoga.jpg" alt="">
+                        <div class="wow animate__zoomIn text-box" data-wow-duration="1s">
                             <h2 class="title">Lor Ipsum :</h2>
                             <p class="subtitle">“Lorem Ipsum DoO”</p>
                         </div>
 
                     </div>
                     <div class="content-2">
-                        <img src="./images/yoga.jpg" alt="">
-                        <div class="text-box">
+                        <img class="wow animate__zoomIn" data-wow-duration="2s" src="./images/yoga.jpg" alt="">
+                        <div class="wow animate__zoomIn text-box" data-wow-duration="1s">
                             <h2 class="title">Lorem Ipsum:</h2>
                             <p class="subtitle">“Lorem Ipsum Lorem
                                 Do sit Amet”</p>
@@ -149,14 +150,17 @@
             </div>
         </section>
         <!-- Section 2 End -->
+
         <!-- Section 3-->
         <section id="section-3">
             <div class="section1-wrapper">
 
                 <div class="text">
-                    <h2>Lorem Ipsumm Do</h2>
+                    <h2 class="wow animate__fadeIn" data-wow-duration="1s">Lorem Ipsumm Do</h2>
                     <img src="./images/pattern-light.png" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi<br>
+                    <p class="wow animate__fadeInDown" data-wow-duration="1s">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit.
+                        Commodi<br>
                         velit, ea eius aliquid, dolorum unde eligendi soluta omnis, esse<br>
                         fugit assumenda delectus!
                     </p>
@@ -203,15 +207,17 @@
         <section id="section-4">
             <div class="section1-wrapper">
                 <div class="text">
-                    <h2>Lorem Ipsumm</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi<br>
+                    <h2 class="wow animate__fadeIn" data-wow-duration="2s">Lorem Ipsumm</h2>
+                    <p class="wow animate__fadeInDown" data-wow-duration="2s">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit.
+                        Commodi<br>
                         velit, ea eius aliquid, dolorum unde eligendi soluta omnis, esse<br>
                         fugit assumenda delectus!
                     </p>
                 </div>
 
                 <div class="card-box">
-                    <div class="card card-1">
+                    <div class="card card-1 wow animate__fadeInLeft" data-wow-duration="2s">
                         <div class="img-wrapper">
                             <img src="./images/card1.jpg" alt="Denim Jeans">
                         </div>
@@ -220,7 +226,7 @@
 
 
                     </div>
-                    <div class="card card-1">
+                    <div class="card card-1 wow animate__fadeInUp" data-wow-duration="2s">
                         <div class="img-wrapper">
                             <img src="./images/card2.jpg" alt="Denim Jeans">
                         </div>
@@ -229,7 +235,7 @@
 
 
                     </div>
-                    <div class="card card-1">
+                    <div class="card card-1 wow animate__fadeInRight" data-wow-duration="2s">
                         <div class="img-wrapper">
                             <img src="./images/card3.jpg" alt="Denim Jeans">
                         </div>
@@ -249,7 +255,7 @@
             <div class="section1-wrapper">
 
                 <div class="text">
-                    <h2>Lorem Ipsumm Do</h2>
+                    <h2 class="wow animate__fadeIn" data-wow-duration="2s">Lorem Ipsumm Do</h2>
                     <img src="./images/pattern-light.png" alt="">
                     <div class="img-wrapper">
                         <div class="image"><img src="./images/playstore.png" alt=""></div>
@@ -286,14 +292,17 @@
             </div>
             <p style="text-align: center;" class="copyright">LOREMIPSUM© 2020 | LOREM</p>
 
-
         </section>
 
 
 
 
     </div>
-    <script src="./js/main.js"></script>
+    <script src="./js/WOW-master/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
     <script src="https://kit.fontawesome.com/63f6cfe932.js" crossorigin="anonymous"></script>
 </body>
 
