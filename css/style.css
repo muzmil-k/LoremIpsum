@@ -563,6 +563,8 @@ a {
   padding: 10px;
   margin: auto;
   margin-top: 100px;
+  flex: 1;
+  min-width: 220px;
 }
 .footer .footer-wraper h2 {
   font-family: "Baloo Bhai", cursive;
@@ -579,6 +581,9 @@ a {
   font-family: "Baloo Bhai", cursive;
   font-weight: bold;
   color: var(--blue);
+}
+.language-links {
+  text-align: center;
 }
 .language-links a img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
