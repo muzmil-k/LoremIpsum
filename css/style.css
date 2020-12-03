@@ -171,9 +171,7 @@ a {
   text-align: center;
   display: none;
 }
-.active {
-  background-color: #06083d;
-}
+
 .active .item {
   display: block;
   border-radius: 20px;
@@ -286,9 +284,6 @@ a {
   .hero-wrapper > * {
     margin: 0 auto;
   }
-  .hero-wrapper .hero-img {
-    /* padding: 40px; */
-  }
 }
 .hero-wrapper .hero-img img {
   max-width: 100%;
@@ -385,6 +380,7 @@ a {
 .section1-wrapper .card-box .card .title {
   font-family: "Baloo Bhai", cursive;
   font-size: 28px;
+  padding-top: 24px;
 }
 .section1-wrapper .card-box .card .subtitle {
   font-family: "Montserrat", sans-serif;
@@ -397,6 +393,10 @@ a {
   padding: 20px;
   padding-left: 22px;
   background-size: contain;
+}
+
+.card-box .card-btn {
+  padding-bottom: 18px;
 }
 
 /* section 2*/
@@ -475,7 +475,12 @@ a {
 }
 #section-3 .section1-wrapper .card-box .card img {
   border-radius: 0;
+  height: 129px;
+  width: 110px;
+  display: block;
+  margin: 0 auto;
 }
+
 #section-3 .section1-wrapper .card-box .card {
   background-color: white;
   border-radius: 10px;
