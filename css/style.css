@@ -99,16 +99,13 @@ a {
 }
 
 /* Navigation styles */
-.site-header {
-  background-image: url("../images/header-wave-1.png");
-  background-repeat: no-repeat;
-  width: 100%;
-  background-size: 100% 100%;
-  padding-bottom: 100px;
-}
-@media (max-width: 960px) {
+@media (min-width: 960px) {
   .site-header {
-    background-image: none;
+    background-image: url("../images/header-wave-1.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 100% 100%;
+    padding-bottom: 100px;
   }
 }
 /*Navigation menu styling*/
