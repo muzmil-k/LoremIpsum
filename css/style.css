@@ -51,7 +51,7 @@
 * 2. common styles
 */
 :root {
-  --blue: #06087f;
+  --blue: #070851;
 }
 
 *,
@@ -99,7 +99,7 @@ a {
 }
 
 /* Navigation styles */
-@media (min-width: 968px) {
+@media (min-width: 960px) {
   .site-header {
     background-image: url("../images/header-wave.png");
     background-repeat: no-repeat;
@@ -257,8 +257,8 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 85px;
-  padding-bottom: 200px;
+  padding-top: 30px;
+  padding-bottom: 100px;
 }
 @media (min-width: 900px) {
   .hero-wrapper > * {
@@ -280,12 +280,14 @@ a {
 @media (max-width: 758px) {
   .hero-wrapper {
     display: block;
+    padding-top: 64px;
+    padding-bottom: 44px;
   }
   .hero-wrapper > * {
     margin: 0 auto;
   }
   .hero-wrapper .hero-img {
-    padding: 40px;
+    /* padding: 40px; */
   }
 }
 .hero-wrapper .hero-img img {
@@ -328,13 +330,14 @@ a {
 
 /* Section 1*/
 .section1-wrapper {
-  background-image: url("../images/pattern-blue.jpg");
+  background-image: url("../images/pattern-blue-1.jpg");
   text-align: center;
   color: white;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
-  background-size: 100%;
+  background-repeat: repeat;
+  background-size: 14%;
 }
 
 .section1-wrapper .text {
@@ -544,7 +547,8 @@ a {
   align-items: center;
   justify-content: space-between;
   color: #06087f;
-  padding: 50px;
+  padding: 40px;
+  padding-top: 100px;
 }
 .footer-wraper .column {
   text-align: center;
@@ -667,9 +671,9 @@ a {
     font-size: 16px;
     padding-top: 20px;
   }
-  .section1-wrapper .text img {
+  /* .section1-wrapper .text img {
     display: none;
-  }
+  } */
   .section1-wrapper .card-box .card .title {
     font-size: 20px;
   }

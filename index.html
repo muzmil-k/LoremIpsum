@@ -60,8 +60,9 @@
 
         .hero-img img {
             position: absolute;
-            z-index: -1;
+            z-index: 0;
             left: 0;
+            width: 100%;
         }
 
         .video-container {
@@ -80,10 +81,26 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
-            padding: 6px;
+            width: 100.01%;
+            height: 100.1%;
+            padding: 0px;
             padding-bottom: 0px;
+            z-index: 2;
+            border: 5px solid #5c5e5e;
+            border-bottom: 0px solid #262626;
+            border-bottom-left-radius: 5px;
+            border-left-color: #1c1c1c;
+        }
+
+        @media (max-width: 960px) {
+            .video-container {
+                width: 85%;
+            }
+
+            .hero-wrapper .hero-text {
+                width: 85%;
+                margin-top: 48px;
+            }
         }
     </style>
 
@@ -124,7 +141,7 @@
                 </div>
 
                 <div class="hero-text">
-                    <h1 class="animate__animated animate__fadeIn" class="title">Lorem Ipsum</h1>
+                    <h1 class="animate__animated animate__fadeIn title">Lorem Ipsum</h1>
                     <div class="hero-btn-wrapper">
                         <div class="btn btn-1"><a>LOREM</a></div>
                         <div class="btn btn-2"><a>LOREM IPSUM</a></div>
@@ -148,7 +165,9 @@
         <section id="section-1">
             <div class="section1-wrapper">
                 <div class="text">
-                    <h2>Lorem Ipsumm </h2>
+                    <h2 class="animate__animated animate__fadeIn">Lorem
+                        Ipsumm
+                    </h2>
                     <img src="./images/pattern-light.png" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi<br>
                         velit, ea eius aliquid, dolorum unde eligendi soluta omnis, esse<br>
@@ -340,21 +359,23 @@
                 </div>
                 <div class=" column column-2">
                     <h2>LOREM IPSUM</h2>
-                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="./html/privacy-policy.html">Privacy Policy</a>
                     <div class="language-links">
                         <a href=""><img src="../images/usa-flag-icon.jpg" alt=""> </a>
-                        <a href=""><img src="../images/indonesia-flag-icon.jpg" style="" alt="">
+                        <a href=""><img src="../images/indonesia-flag-icon.jpg" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="column column-3">
                     <h2>LOREM IPSUM</h2>
-                    <a href="team.html">
+                    <a href="./html/team.html">
                         <p>Our Team</p>
                     </a>
                 </div>
+
             </div>
-            <p class="copyright">LOREMIPSUM© 2020 | LOREM</p>
+            <p style="text-align: center;" class="copyright">LOREMIPSUM© 2020 | LOREM</p>
+
 
         </section>
 
