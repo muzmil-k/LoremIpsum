@@ -54,14 +54,7 @@
   width: 225px;
   margin: 0 auto;
 }
-/* @media (min-width: 576px) {
-  .section1-wrapper .card-box .card img {
-    width: 225px;
-  }
-} */
-/* #section-1 .section1-wrapper .text > h2 {
-  padding-top: 0;
-} */
+
 .section1-wrapper .card-box {
   padding-top: 0;
 }
