@@ -23,6 +23,7 @@
             });
         });
 
+        /* replace video when click on button */
 
         $(document).ready(function () {
             $(".btn-1").click(function () {
@@ -44,6 +45,17 @@
 
             });
         });
+
+
+        /* youtube video stop on click */
+         $('a.stop-video-2').click(function () {
+            $('.youtube-video-2')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+        });
+        $('a.stop-video-1').click(function () {
+            $('.youtube-video-1')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+        });
+
+        /* Navigation menu*/
 
                 const toggle = document.querySelector(".toggle");
         const menu = document.querySelector(".menu");
