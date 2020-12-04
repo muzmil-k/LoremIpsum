@@ -4,9 +4,6 @@
   line-height: 1;
   padding-top: 0;
 }
-.section1-wrapper .text > h1:first-child {
-  margin-top: 0;
-}
 
 .section1-wrapper .text {
   margin: 4rem;
