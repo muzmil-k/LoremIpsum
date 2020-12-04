@@ -7,38 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Beranda | Aplikasi Android Paling Populer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./vendors/WOW-master/css/libs/animate.min.css">
+    <link rel="stylesheet" href="../vendors/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/team.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            // Add smooth scrolling to all links
-            $("a").on('click', function (event) {
-
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function () {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-        });
-    </script>
-
 </head>
+
 
 <body>
     <div class="page-wrapper">
@@ -63,11 +39,13 @@
         <section id="section-1">
             <div class="section1-wrapper">
                 <div class="text">
-                    <h2>Our Team</h2>
+                    <h2 class="team-title wow animate__fadeIn" data-wow-duration="2s">Our Team</h2>
                 </div>
 
-                <div class="card-box">
+                <div class="card-box owl-carousel">
+
                     <div class="card card-1">
+
                         <div class="img-wrapper">
                             <img src="../images/avatar.jpg" alt="Denim Jeans">
                         </div>
@@ -79,7 +57,9 @@
                             dignissim.</p>
 
                     </div>
+
                     <div class="card card-1">
+
                         <div class="img-wrapper">
                             <img src="../images/avatar.jpg" alt="Denim Jeans">
                         </div>
@@ -91,8 +71,49 @@
                             dignissim.</p>
 
                     </div>
-                    <!-- <div class="card card-2"></div>
-                    <div class="card card-3"></div> -->
+
+                    <div class="card card-1">
+
+                        <div class="img-wrapper">
+                            <img src="../images/avatar.jpg" alt="Denim Jeans">
+                        </div>
+                        <h2 class="title">LoremIpsum Lorem</h2>
+                        <p class="subtitle">Lorem ipsum dolor sit amet, erat lobortis te nam. Nihil essent latine in
+                            mel, mei ludus detraxit an, ocurreret
+                            dissentias sit te. Quot habeo tation est no, usu id nisl aliquam, eu qualisque accusamus
+                            elaboraret vis. Ei has omnesque
+                            dignissim.</p>
+
+                    </div>
+
+                    <div class="card card-1">
+
+                        <div class="img-wrapper">
+                            <img src="../images/avatar.jpg" alt="Denim Jeans">
+                        </div>
+                        <h2 class="title">LoremIpsum Lorem</h2>
+                        <p class="subtitle">Lorem ipsum dolor sit amet, erat lobortis te nam. Nihil essent latine in
+                            mel, mei ludus detraxit an, ocurreret
+                            dissentias sit te. Quot habeo tation est no, usu id nisl aliquam, eu qualisque accusamus
+                            elaboraret vis. Ei has omnesque
+                            dignissim.</p>
+
+                    </div>
+
+                    <div class="card card-1">
+
+                        <div class="img-wrapper">
+                            <img src="../images/avatar.jpg" alt="Denim Jeans">
+                        </div>
+                        <h2 class="title">LoremIpsum Lorem</h2>
+                        <p class="subtitle">Lorem ipsum dolor sit amet, erat lobortis te nam. Nihil essent latine in
+                            mel, mei ludus detraxit an, ocurreret
+                            dissentias sit te. Quot habeo tation est no, usu id nisl aliquam, eu qualisque accusamus
+                            elaboraret vis. Ei has omnesque
+                            dignissim.</p>
+
+                    </div>
+
                 </div>
 
             </div>
@@ -147,51 +168,12 @@
 
 
     </div>
+    <script src="../vendors/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="../js/main.js"></script>
     <script>
-        const toggle = document.querySelector(".toggle");
-        const menu = document.querySelector(".menu");
-        const items = document.querySelectorAll(".item");
-
-        /* Toggle mobile menu */
-        function toggleMenu() {
-            if (menu.classList.contains("active")) {
-                menu.classList.remove("active");
-                toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
-            } else {
-                menu.classList.add("active");
-                toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
-            }
-        }
-
-        /* Activate Submenu */
-        function toggleItem() {
-            if (this.classList.contains("submenu-active")) {
-                this.classList.remove("submenu-active");
-            } else if (menu.querySelector(".submenu-active")) {
-                menu.querySelector(".submenu-active").classList.remove("submenu-active");
-                this.classList.add("submenu-active");
-            } else {
-                this.classList.add("submenu-active");
-            }
-        }
-
-        /* Close Submenu From Anywhere */
-        function closeSubmenu(e) {
-            let isClickInside = menu.contains(e.target);
-
-            if (!isClickInside && menu.querySelector(".submenu-active")) {
-                menu.querySelector(".submenu-active").classList.remove("submenu-active");
-            }
-        }
-        /* Event Listeners */
-        toggle.addEventListener("click", toggleMenu, false);
-        for (let item of items) {
-            if (item.querySelector(".submenu")) {
-                item.addEventListener("click", toggleItem, false);
-            }
-            item.addEventListener("keypress", toggleItem, false);
-        }
-        document.addEventListener("click", closeSubmenu, false);
+        $('.owl-carousel').owlCarousel({
+            rtl: true
+        })
     </script>
     <script src="https://kit.fontawesome.com/63f6cfe932.js" crossorigin="anonymous"></script>
 </body>

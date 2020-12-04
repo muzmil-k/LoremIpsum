@@ -5,6 +5,9 @@
 .section1-wrapper .card-box .card {
   box-shadow: none;
 }
+.section1-wrapper .card-box .card .title {
+  padding-top: 0;
+}
 .section1-wrapper .card-box .card .subtitle {
   font-weight: bold;
   margin-top: 0;
@@ -50,10 +53,15 @@
     margin-top: -30px;
     padding-top: 0;
   }
-  .section1-wrapper .card-box .card .title {
-    margin-top: 0;
-  }
+
   .card-box .img-wrapper {
     padding-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .section1-wrapper .text > h2 {
+    padding: 64px;
+    font-size: 64px;
   }
 }

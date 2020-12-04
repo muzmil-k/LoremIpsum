@@ -38,13 +38,15 @@
             <div class="hero-wrapper">
 
                 <div class="hero-img video-container">
-                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yzCYLeR3G7k?controls=0"
+                    <iframe class="video-1 youtube-video-1" width="560" height="315"
+                        src="https://www.youtube-nocookie.com/embed/yzCYLeR3G7k?enablejsapi=1&version=3&playerapiid=ytplayer"
                         frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
-                    <iframe class="video-2" width="560" height="315"
-                        src="https://www.youtube-nocookie.com/embed/S6jxfaGrcu4?controls=0" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    <iframe class="video-2 youtube-video-2" width="560" height="315"
+                        src="https://www.youtube-nocookie.com/embed/S6jxfaGrcu4?enablejsapi=1&version=3&playerapiid=ytplayer"
+                        frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <img src="../images/pc-1.png" alt="">
 
@@ -58,8 +60,8 @@
 
                     <div class="hero-btn-wrapper">
 
-                        <div class="btn btn-1"><a>LOREM</a></div>
-                        <div class="btn btn-2"><a>LOREM IPSUM</a></div>
+                        <div class="btn btn-1"><a class="stop-video-2">LOREM</a></div>
+                        <div class="btn btn-2"><a class="stop-video-1">LOREM IPSUM</a></div>
 
                     </div>
 
@@ -343,36 +345,7 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../vendors/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(".owl-carousel").owlCarousel();
-        });
-        var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            items: 3,
-            loop: true,
-            margin: 10,
-            autoplay: true,
-            autoplayTimeout: 1000,
-            autoplayHoverPause: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: false
-                },
-                600: {
-                    items: 2,
-                    nav: false
-                },
-                1000: {
-                    items: 3,
-                    nav: false
-                }
-            }
-        });
-    </script>
     <script src="../js/main.js"></script>
-
     <script src="https://kit.fontawesome.com/63f6cfe932.js" crossorigin="anonymous"></script>
 </body>
 
