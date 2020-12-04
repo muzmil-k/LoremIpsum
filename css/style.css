@@ -569,6 +569,12 @@ a {
 #section-3 .section1-wrapper .text > p {
   margin-top: -85px;
 }
+@media (max-width: 768px) {
+  #section-1 .section1-wrapper .text > p,
+  #section-3 .section1-wrapper .text > p {
+    margin-top: -55px;
+  }
+}
 
 .card button {
   border: none;
@@ -791,6 +797,7 @@ a {
   }
   .section2-wrapper .section-content {
     text-align: center;
+    margin: 0 auto;
   }
   .section-images .text-box .title {
     font-size: 30px;
