@@ -552,18 +552,6 @@ a {
 #section-3 .section1-wrapper .text > p {
   margin-top: -115px;
 }
-/* 
-#section-1 .section1-wrapper .text h2::after,
-#section-3 .section1-wrapper .text h2::after {
-  display: block;
-  content: url("../images/pattern-light.png");
-}
-
-@media (max-width: 768px) {
-  #section-1 .section1-wrapper .text h2::after,
-  #section-3 .section1-wrapper .text h2::after {
-    content: url("../images/pattern-light-2.png");
-  } */
 
 #section-1 .section1-wrapper .text > p,
 #section-3 .section1-wrapper .text > p {
