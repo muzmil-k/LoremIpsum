@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../vendors/WOW-master/css/libs/animate.min.css">
     <link rel="stylesheet" href="../vendors/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/team.css">
@@ -37,7 +38,7 @@
         <section id="section-1">
             <div class="section1-wrapper">
                 <div class="text">
-                    <h2 class="team-title">Our Team</h2>
+                    <h2 class="team-title wow animate__fadeIn" data-wow-duration="2s">Our Team</h2>
                 </div>
 
                 <div class="card-box owl-carousel">
@@ -162,6 +163,10 @@
         </section>
 
     </div>
+    <script src="../vendors/WOW-master/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="../vendors/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script src="../js/main.js"></script>
     <script src="https://kit.fontawesome.com/63f6cfe932.js" crossorigin="anonymous"></script>
