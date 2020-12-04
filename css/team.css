@@ -17,6 +17,7 @@
   margin: 0;
   padding: 0px;
   padding-top: 64px;
+  padding-bottom: 48px;
 }
 @media only screen and (max-width: 768px) {
   .section1-wrapper .text .team-title {
