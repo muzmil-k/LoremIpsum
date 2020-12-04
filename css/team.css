@@ -8,6 +8,22 @@
 .section1-wrapper .card-box .card .title {
   padding-top: 0;
 }
+
+.section1-wrapper .text .team-title {
+  font-size: 70px;
+  font-family: "Baloo Bhai", cursive;
+  color: var(--blue);
+  line-height: 1;
+  margin: 0;
+  padding: 0px;
+  padding-top: 64px;
+}
+@media only screen and (max-width: 768px) {
+  .section1-wrapper .text .team-title {
+    font-size: 48px;
+  }
+}
+
 .section1-wrapper .card-box .card .subtitle {
   font-weight: bold;
   margin-top: 0;
@@ -56,12 +72,5 @@
 
   .card-box .img-wrapper {
     padding-bottom: 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .section1-wrapper .text > h2 {
-    padding: 64px;
-    font-size: 64px;
   }
 }
